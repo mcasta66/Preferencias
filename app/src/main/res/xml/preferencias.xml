@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:title="Categoría 1"
+    android:key="preferencias_principal" >
+    <CheckBoxPreference
+        android:key="opcion1"
+        android:title="Preferencia 1"
+        android:summary="Descripción de la preferencia 1"/>
+    <EditTextPreference
+        android:key="opcion2"
+        android:title="Preferencia 2"
+        android:summary="Descripción de la preferencia 2"
+        android:inputType="number"
+        android:defaultValue="5"/>
+    <ListPreference
+        android:key="opcion3"
+        android:title="Preferencia 3"
+        android:summary="Descripción de la preferencia 3"
+        android:entries="@array/pais"
+        android:entryValues="@array/codigopais"
+        android:defaultValue="1"/>
+    <PreferenceScreen android:title="Categoría 2">
+        <CheckBoxPreference
+            android:key="opcion4"
+            android:title="Preferencia 4"
+            android:summary="Descripción de la preferencia 4"/>
+        <EditTextPreference
+            android:key="opcion5"
+            android:title="Preferencia 5"
+            android:summary="Descripción de la preferencia 5"
+            android:inputType="number"
+            android:defaultValue="0"/>
+    </PreferenceScreen>
+</PreferenceScreen>
